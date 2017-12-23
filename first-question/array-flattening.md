@@ -1,3 +1,11 @@
+
+
+\# test \#
+
+
+
+\`\`\`php
+
 $array =\[
 
   'name' =&gt;\[
@@ -42,31 +50,7 @@ $flattened= iterator\_to\_array\($flattened, false\);
 
 $flattened=iterator\_to\_array\(new RecursiveIteratorIterator\(new RecursiveArrayIterator\($array\),false\);
 
-```
- $array =[
-  'name' =>[
-    'val',
-    'Psy'
-    ],
-    'hobbies =>[
-    'dev',
-    'fitness'
-    ]
-    'color'=>[
-    'blue'
-    ]
  
-];
- 
-$flattened= new RecursiveArrayIterator($array);
-$flattened= new RecursiveIteratorIterator($flattened);
-$flattened= iterator_to_array($flattened, false);
- 
- 
-//shorter
-$flattened=iterator_to_array(new RecursiveIteratorIterator(new RecursiveArrayIterator($array),false);
- 
-```
 
-
+\`\`\`
 

@@ -1,4 +1,9 @@
 # Summary
 
-* [What is XYZ?](first-question.md)
+* [Introduction](README.md)
+* [arrays](first-question.md)
+  * [array flattening](first-question/array-flattening.md)
+  * [multidimentional handling](first-question/two.md)
+  * [test](first-question/test.md)
 * [How can I do X?](second-question.md)
+

@@ -16,4 +16,46 @@ var_dump(parse_url($url, PHP_URL_PATH));
 var_dump(parse_url($url, PHP_URL_QUERY));
 var_dump(parse_url($url, PHP_URL_FRAGMENT));
 
+//renvoi
+array(8) {
+  ["scheme"]=>
+  string(4) "http"
+  ["host"]=>
+  string(8) "hostname"
+  ["port"]=>
+  int(9090)
+  ["user"]=>
+  string(8) "username"
+  ["pass"]=>
+  string(8) "password"
+  ["path"]=>
+  string(5) "/path"
+  ["query"]=>
+  string(9) "arg=value"
+  ["fragment"]=>
+  string(6) "anchor"
+}
+string(4) "http"
+string(8) "username"
+string(8) "password"
+string(8) "hostname"
+int(9090)
+string(5) "/path"
+string(9) "arg=value"
+string(6) "anchor"
+
+//---------------------------------
+//            exemple 2
+array(3) { 
+["scheme"]=> string(4) "http"
+["host"]=> string(12) "172.30.92.53" 
+["path"]=> string(26) "/_btlecest/public/home.php"
+}
+
+$url="http://172.30.92.53/_btlecest/public/home.php";
+var_dump(parse_url($url));
+
+
+
 ```
+

@@ -1,18 +1,7 @@
-Hello
-
-Testing gitbook to save my code snippets
-
-
-
-\`\`\`php
-
+```php
 $test="coucou";
-
-function print\($test\){
-
+function print($test){
     return $test;
-
 }
-
-\`\`\`
+```
 

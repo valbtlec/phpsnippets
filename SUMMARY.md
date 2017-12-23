@@ -6,4 +6,6 @@
   * [multidimentional handling](first-question/two.md)
   * [test](first-question/test.md)
 * [How can I do X?](second-question.md)
+* directories, pages
+  * [parse\_url](parseurl.md)
 

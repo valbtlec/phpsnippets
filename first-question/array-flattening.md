@@ -1,12 +1,30 @@
-\`\`\`php
+```
+| Markdown | HTML | Rendered |
+```
 
-$test="coucou";
+    | -- | -- | -- |
+    | 
+    `# Some Header`
+     | 
+    `
+    <
+    h1
+    >
+    Some Header
+    <
+    /h1
+    >
+    `
+     | 
+    <
+    h1
+    >
+    Some Header
+    <
+    /
+    h1
+    >
+     |
 
-function print\($test\){
 
-    return $test;
-
-}
-
-\`\`\`
 

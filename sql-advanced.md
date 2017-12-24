@@ -22,12 +22,10 @@ SELECT orders.orderid AS "Numero de facture" FROM customers, orders where custom
 
 jointure simple + renommage des tables
 
-orders deviendra o et customer c gace au from : **c.customername, o.orderdate**
+btlec deviendra b et services s grace au FROM : **btlec b, services c**
 
 
 ```sql
-SELECT o.orderid AS "Numero de facture", c.customername, o.orderdate FROM customers c, orders o where c.customerid=o.customerid;
-
 SELECT b.nom, b.prenom, s.id, s.full_name AS "nom service" FROM btlec b, services c where b.id_service=s.id
 
 

@@ -1,6 +1,8 @@
 #multidimentional arrays
+ 
+##rechercher une valeur
 
-**some array**
+*array exemple : *
 
 ```php
 $people = array(

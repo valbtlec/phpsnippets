@@ -26,7 +26,7 @@ btlec deviendra b et services s grace au FROM : **btlec b, services c**
 
 
 ```sql
-SELECT b.nom, b.prenom, s.id, s.full_name AS "nom service" FROM btlec b, services c where b.id_service=s.id
+SELECT b.nom, b.prenom, s.id, s.full_name AS "nom service" FROM btlec b, services s where b.id_service=s.id
 
 
 

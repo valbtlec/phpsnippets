@@ -40,20 +40,24 @@ a et b sont considérées par mysql comme 2 tables différentes
 SELECT a.nom, a.nom
 FROM btlec a, btlec b where a.nom=b.nom
 
+plus rapide en calcul :
+SELECT a.nom, b.nom
+FROM btlec a
+JOIN btlec b ON 
+a.nom=b.nom
 
 
+jointure sur 2 vraies tables :
 
+la liste des noms par services :
 
-SELECT a.`id_user`, b.`id_user` from
-stats_logs a, stats_logs b where a.`id_user` =b.`id_user`
+SELECT btlec.nom, services.full_name 
+FROM services 
+JOIN btlec
+ON btlec.id_service = services.id
+order by 
+services.full_name 
 
-afficher les users id qui existent dans les 2 tables donc tous !!
-
-SELECT a.`id_user`, b.`id_user` from
-stats_logs a
-JOIN
-stats_logs b 
-ON a.`id_user` =b.`id_user`
 
 
 

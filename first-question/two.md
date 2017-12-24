@@ -19,6 +19,11 @@ $people = array(
     'fav_color' => 'black'
   )
 );
+```
+
+*utilisation d'une fonction récursive
+  
+
 
 function recursive_array_search($needle,$haystack) {
     foreach($haystack as $key=>$value) {
@@ -36,4 +41,3 @@ echo $result=recursive_array_search('blue',$people); // attention renvoi  cette 
 
 	$found_key = array_search(blue, array_column($people, 'fav_color'));  // retour 5, l'id de l'array et non l'emplacement dans le tableau
 	$name= $people[$found_key]['name']; // le nom de l'array 5 =>samuel
-```

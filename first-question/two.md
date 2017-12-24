@@ -21,7 +21,7 @@ $people = array(
 );
 ```
 
-* utilisation d'une fonction récursive
+  * utilisation d'une fonction récursive
   
 
 

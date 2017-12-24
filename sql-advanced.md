@@ -2,8 +2,6 @@
 
 ## jointure simple
 
-
-
 ```sql
 
 SELECT * FROM customers, orders where customers.customerid=orders.customerid;
@@ -11,12 +9,9 @@ SELECT * FROM customers, orders where customers.customerid=orders.customerid;
 ```
 
 
-
-```css
-
-h1{
-color:blue;
-}
+renommer des colonnes
+```sql
+SELECT orders.orderid AS "Numero de facture" FROM customers, orders where customers.customerid=orders.customerid;
 
 ```
 

@@ -36,27 +36,39 @@ renvoie 2 colonnes identiques avec la totalité de user id
 a et b sont considérées par mysql comme 2 tables différentes
 
 
-
+```sql
 SELECT a.nom, a.nom
 FROM btlec a, btlec b where a.nom=b.nom
+```
+
+
 
 plus rapide en calcul :
+```sql
 SELECT a.nom, b.nom
 FROM btlec a
 JOIN btlec b ON 
 a.nom=b.nom
+```
+
 
 
 jointure sur 2 vraies tables :
 
 la liste des noms par services :
 
+
+
+```sql
 SELECT btlec.nom, services.full_name 
 FROM services 
 JOIN btlec
 ON btlec.id_service = services.id
 order by 
 services.full_name 
+```
+
+
 
 astuce renommer arbitrairement les tables en l pour left et r pour right afin de mieux trouver le type de jointure adaptée
 
@@ -79,7 +91,12 @@ l.full_name
 
 #agregation
 
+le nombre de compte btlec
+
+select count(*) AS "nb user btlec" from btlec;
 
 
+la quantité total de produits commandés pour une facture
 
+select 'total", orderNumber, sum(quantityOrdered) from orderdetails where ordernumber= 10100;
 

@@ -2,7 +2,9 @@
  
 ##rechercher une valeur
 
-*array exemple : *
+*arrays exemples : *
+
+**array people avec clés qui ne se suivent pas**
 
 ```php
 $people = array(
@@ -20,6 +22,35 @@ $people = array(
   )
 );
 ```
+
+**array services avec clés qui se suivent (requete pdo, les tableaux ordonnés) : *
+
+```php
+$services = array(
+  1 => array(
+    'id' => 15,
+    'full_name' => 'green'
+  ),
+  2=> array(
+    'id' => 5,
+    'full_name' => 'blue'
+  ),
+  3=> array(
+    'id' => '2',
+    'full_name' => 'black'
+  )
+  4=> array(
+    '4' => '2',
+    'full_name' => 'yellow'
+  )
+
+);
+```
+
+
+
+
+
 
   * utilisation d'une fonction récursive
 

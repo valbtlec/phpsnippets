@@ -27,9 +27,6 @@ btlec deviendra b et services s grace au FROM : **btlec b, services c**
 
 ```sql
 SELECT b.nom, b.prenom, s.id, s.full_name AS "nom service" FROM btlec b, services s where b.id_service=s.id
-
-
-
 ```
 
 ##jointure naturelle
@@ -37,6 +34,14 @@ SELECT b.nom, b.prenom, s.id, s.full_name AS "nom service" FROM btlec b, service
 
 renvoie 2 colonnes identiques avec la totalité de user id
 a et b sont considérées par mysql comme 2 tables différentes
+
+
+
+SELECT a.nom, a.nom
+FROM btlec a, btlec b where a.nom=b.nom
+
+
+
 
 
 SELECT a.`id_user`, b.`id_user` from

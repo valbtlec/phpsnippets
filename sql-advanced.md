@@ -100,3 +100,14 @@ la quantité total de produits commandés pour une facture
 
 select 'total", orderNumber, sum(quantityOrdered) from orderdetails where ordernumber= 10100;
 
+la quantité total de produits commandés pour chaque facture
+
+select 'total", orderNumber, sum(quantityOrdered) from orderdetails 
+group by orderNumber;
+
+
+#sous requetes
+
+
+
+

@@ -39,8 +39,15 @@ echo $result=recursive_array_search('blue',$people); // attention renvoi  cette 
   * avec array_search et array_column
 
 ```php
-$found_key = array_search('blue', array_column($people, 'fav_color'));  // retour 5, l'id de l'array et non l'emplacement dans le tableau
+$found_key = array_search('blue', array_column($people, 'fav_color'));  
+// retour 5, l'id de l'array et non l'emplacement dans le tableau
 ```
 
+du coup :
 
-	$name= $people[$found_key]['name']; // le nom de l'array 5 =>samuel
+```php
+//renvoi une erreur car cherche $people[5] qui n'existe pas
+$name= $people[$found_key]['name']; // le nom de l'array 5 =>samuel
+
+```
+

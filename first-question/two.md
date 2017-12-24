@@ -1,3 +1,6 @@
+#multidimentional arrays
+
+__some array__
 
 ```php
 $people = array(

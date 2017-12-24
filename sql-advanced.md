@@ -72,38 +72,67 @@ services.full_name
 
 astuce renommer arbitrairement les tables en l pour left et r pour right afin de mieux trouver le type de jointure adaptée
 
+
+
+```sql
 SELECT r.nom, l.full_name 
 FROM services l 
 JOIN btlec r
 ON r.id_service = l.id
 order by 
 l.full_name
+```
+
+
 
 si je veux toute la liste des noms btlec qu'ils soient ou non assignés à un service :
 
+
+
+```sql
 SELECT r.nom, l.full_name 
 FROM services l 
 RIGHT JOIN btlec r
 ON r.id_service = l.id
 order by 
 l.full_name
+```
+
+
 
 
 #agregation
 
 le nombre de compte btlec
 
+
+```sql
 select count(*) AS "nb user btlec" from btlec;
+```
+
+
 
 
 la quantité total de produits commandés pour une facture
 
+
+
+```sql
 select 'total", orderNumber, sum(quantityOrdered) from orderdetails where ordernumber= 10100;
+```
+
+
 
 la quantité total de produits commandés pour chaque facture
 
+
+
+```sql
 select 'total", orderNumber, sum(quantityOrdered) from orderdetails 
 group by orderNumber;
+```
+
+
 
 
 #sous requetes
@@ -111,17 +140,23 @@ group by orderNumber;
 on veut la moyenne d'article commandé :
 
 
-```
+```sql
 select avg(quantityOrdered) from orderdetails;
 ```
  ensuite, on veut tout les lignes de produits commandés pour les quelle la quantité de produit est supérieure à cette moyenne
  
  
+
+
+```sql
  select orderNum, productCode, quantityOrdered from orderDetails where quantityOrdered >
  (
   select avg(quantityOrdered) from orderdetails;
  )
 order by ordernumber;
+
+```
+
 
 
 

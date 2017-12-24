@@ -17,9 +17,11 @@ SELECT orders.orderid AS "Numero de facture" FROM customers, orders where custom
 
 renommer des tables
 
-orders deviendra o et customer c gace au from
+orders deviendra o et customer c gace au from : **c.customername, o.orderdate**
+
+
 ```sql
-SELECT o.orderid AS "Numero de facture", c.customername, o.orderdate FROM customers c, orders o where customers.customerid=orders.customerid;
+SELECT o.orderid AS "Numero de facture", c.customername, o.orderdate FROM customers c, orders o where c.customerid=o.customerid;
 
 ```
 

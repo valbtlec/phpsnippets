@@ -2,6 +2,8 @@
 
 ## jointure simple
 
+jointure simple
+
 ```sql
 
 SELECT * FROM customers, orders where customers.customerid=orders.customerid;
@@ -9,13 +11,13 @@ SELECT * FROM customers, orders where customers.customerid=orders.customerid;
 ```
 
 
-renommer des colonnes
+jointure simple + renommage des colonnes
 ```sql
 SELECT orders.orderid AS "Numero de facture" FROM customers, orders where customers.customerid=orders.customerid;
 
 ```
 
-renommer des tables
+jointure simple + renommage des tables
 
 orders deviendra o et customer c gace au from : **c.customername, o.orderdate**
 

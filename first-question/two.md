@@ -22,10 +22,6 @@ $people = array(
 ```
 
   * utilisation d'une fonction récursive
-  
-
-
-
 
 ```php
 function recursive_array_search($needle,$haystack) {
@@ -37,13 +33,9 @@ function recursive_array_search($needle,$haystack) {
     }
     return false;
 }
+echo $result=recursive_array_search('blue',$people); // attention renvoi  cette fois ci
 ```
 
-
-
-echo $result=recursive_array_search('blue',$people); // attention renvoi  cette fois ci
-
-//ou 
-
-	$found_key = array_search(blue, array_column($people, 'fav_color'));  // retour 5, l'id de l'array et non l'emplacement dans le tableau
+  *avec array_search et array_column
+$found_key = array_search(blue, array_column($people, 'fav_color'));  // retour 5, l'id de l'array et non l'emplacement dans le tableau
 	$name= $people[$found_key]['name']; // le nom de l'array 5 =>samuel

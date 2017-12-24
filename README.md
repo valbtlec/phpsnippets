@@ -1,7 +1,3 @@
-```php
-$test="coucou";
-function print($test){
-    return $test;
-}
-```
+#SNIPPETS et NOTES PHP
+
 

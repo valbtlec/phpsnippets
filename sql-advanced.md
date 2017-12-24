@@ -58,9 +58,26 @@ ON btlec.id_service = services.id
 order by 
 services.full_name 
 
+astuce renommer arbitrairement les tables en l pour left et r pour right afin de mieux trouver le type de jointure adaptée
+
+SELECT r.nom, l.full_name 
+FROM services l 
+JOIN btlec r
+ON r.id_service = l.id
+order by 
+l.full_name
+
+si je veux toute la liste des noms btlec qu'ils soient ou non assignés à un service :
+
+SELECT r.nom, l.full_name 
+FROM services l 
+RIGHT JOIN btlec r
+ON r.id_service = l.id
+order by 
+l.full_name
 
 
-
+#agregation
 
 
 

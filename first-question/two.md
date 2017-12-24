@@ -25,6 +25,9 @@ $people = array(
   
 
 
+
+
+```php
 function recursive_array_search($needle,$haystack) {
     foreach($haystack as $key=>$value) {
         $current_key=$key;
@@ -34,6 +37,9 @@ function recursive_array_search($needle,$haystack) {
     }
     return false;
 }
+```
+
+
 
 echo $result=recursive_array_search('blue',$people); // attention renvoi  cette fois ci
 

@@ -108,6 +108,22 @@ group by orderNumber;
 
 #sous requetes
 
+on veut la moyenne d'article commandé :
+
+
+```
+select avg(quantityOrdered) from orderdetails;
+```
+ ensuite, on veut tout les lignes de produits commandés pour les quelle la quantité de produit est supérieure à cette moyenne
+ 
+ 
+ select orderNum, productCode, quantityOrdered from orderDetails where quantityOrdered >
+ (
+  select avg(quantityOrdered) from orderdetails;
+ )
+order by ordernumber;
+
+
 
 
 

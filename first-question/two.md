@@ -1,6 +1,6 @@
 #multidimentional arrays
 
-*some array*
+**some array**
 
 ```php
 $people = array(

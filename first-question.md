@@ -1,7 +1,7 @@
 #trier les tableaux multidimentionnels
 
 
-fonction spéciale pour les tableau multi renvoyés par pdo
+**fonction spéciale pour les tableau multi renvoyés par pdo**
 
 ```php
 //fonction

@@ -1,7 +1,9 @@
 #trier les tableaux multidimentionnels
 
+1-fonction pour tableaux renvoyés par pdo
+2- tri d'un tableau multi avec un nombre d'index limités
 
-**fonction spéciale pour les tableau multi renvoyés par pdo**
+1- **fonction spéciale pour les tableau multi renvoyés par pdo**
 
 ```php
 //fonction
@@ -82,4 +84,6 @@ arr2:
 
 
 ```
+
+2-**nombre limité de tableau**
 

@@ -7,6 +7,7 @@
 * directories, pages
   * [parse\_url](parseurl.md)
 * [sql advanced](sql-advanced.md)
+  * [SQL date](sql-advanced/sql-date.md)
 
 ## SQL
 

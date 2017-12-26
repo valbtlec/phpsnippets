@@ -4,7 +4,7 @@
 * [arrays](first-question.md)
   * [array flattening function](first-question/array-flattening.md)
   * [multidimentional handling](first-question/two.md)
-* directories, pages
+* [directories, pages](directories-pages.md)
   * [parse\_url](parseurl.md)
 * [Dates](dates.md)
   * [dateTime\(\)](dates/datetime.md)

@@ -20,8 +20,6 @@ SELECT DAY(date) AS jour, MONTH(date) AS mois, YEAR(date) AS annee, HOUR(date) A
 formater une date
 
 
-
-
 ```sql
 SELECT DATE_FORMAT(date, '%d/%m/%Y %Hh%imin%ss') AS date FROM table //renvoie DD/MM/YYYY HHhMMSS49s ( 11/03/2010 15h47min49)
 ```

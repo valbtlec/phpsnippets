@@ -5,7 +5,7 @@
 (voir la doc : http://php.net/manual/fr/function.array-multisort.php)
 
 
-1- **fonction spéciale pour les tableau multi renvoyés par pdo**
+**1-fonction spéciale pour les tableau multi renvoyés par pdo**
 
 ```php
 //fonction

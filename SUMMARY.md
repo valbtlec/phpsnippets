@@ -6,10 +6,11 @@
   * [multidimentional handling](first-question/two.md)
 * directories, pages
   * [parse\_url](parseurl.md)
-* [sql advanced](sql-advanced.md)
-  * [SQL date](sql-advanced/sql-date.md)
 * [Dates](dates.md)
-  * dateTime\(\)
+  * [dateTime\(\)](dates/datetime.md)
 
 ## SQL
+
+* [sql advanced](sql-advanced.md)
+  * [SQL date](sql-advanced/sql-date.md)
 

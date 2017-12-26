@@ -2,6 +2,8 @@
 
 1-fonction pour tableaux renvoyés par pdo
 2- tri d'un tableau multi avec un nombre d'index limités
+(voir la doc : http://php.net/manual/fr/function.array-multisort.php)
+
 
 1- **fonction spéciale pour les tableau multi renvoyés par pdo**
 
@@ -47,43 +49,19 @@ $arr2 = array_msort($arr1, array('name'=>SORT_DESC, 'cat'=>SORT_ASC));
 
 debug($arr1, $arr2);
 
-arr1:
-    0:
-        id: 1 (int)
-        name: aA (string:2)
-        cat: cc (string:2)
-    1:
-        id: 2 (int)
-        name: aa (string:2)
-        cat: dd (string:2)
-    2:
-        id: 3 (int)
-        name: bb (string:2)
-        cat: cc (string:2)
-    3:
-        id: 4 (int)
-        name: bb (string:2)
-        cat: dd (string:2)
-arr2:
-    2:
-        id: 3 (int)
-        name: bb (string:2)
-        cat: cc (string:2)
-    3:
-        id: 4 (int)
-        name: bb (string:2)
-        cat: dd (string:2)
-    0:
-        id: 1 (int)
-        name: aA (string:2)
-        cat: cc (string:2)
-    1:
-        id: 2 (int)
-        name: aa (string:2)
-        cat: dd (string:2)
+```
+
+**2-nombre limité de tableau**
+
 
 
 ```
-
-2-**nombre limité de tableau**
+$ar = array(
+       array("10", 11, 100, 100, "a"),
+       array(   1,  2, "2",   3,   1)
+      );
+array_multisort($ar[0], SORT_ASC, SORT_STRING,
+                $ar[1], SORT_NUMERIC, SORT_DESC);
+var_dump($ar);
+```
 

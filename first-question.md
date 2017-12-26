@@ -1,0 +1,85 @@
+#trier les tableaux multidimentionnels
+
+
+
+
+```php
+//fonction
+function array_msort($array, $cols)
+{
+    $colarr = array();
+    foreach ($cols as $col => $order) {
+        $colarr[$col] = array();
+        foreach ($array as $k => $row) { $colarr[$col]['_'.$k] = strtolower($row[$col]); }
+    }
+    $eval = 'array_multisort(';
+    foreach ($cols as $col => $order) {
+        $eval .= '$colarr[\''.$col.'\'],'.$order.',';
+    }
+    $eval = substr($eval,0,-1).');';
+    eval($eval);
+    $ret = array();
+    foreach ($colarr as $col => $arr) {
+        foreach ($arr as $k => $v) {
+            $k = substr($k,1);
+            if (!isset($ret[$k])) $ret[$k] = $array[$k];
+            $ret[$k][$col] = $array[$k][$col];
+        }
+    }
+    return $ret;
+
+}
+
+
+//exemple
+
+
+$arr1 = array(
+    array('id'=>1,'name'=>'aA','cat'=>'cc'),
+    array('id'=>2,'name'=>'aa','cat'=>'dd'),
+    array('id'=>3,'name'=>'bb','cat'=>'cc'),
+    array('id'=>4,'name'=>'bb','cat'=>'dd')
+);
+
+$arr2 = array_msort($arr1, array('name'=>SORT_DESC, 'cat'=>SORT_ASC));
+
+debug($arr1, $arr2);
+
+arr1:
+    0:
+        id: 1 (int)
+        name: aA (string:2)
+        cat: cc (string:2)
+    1:
+        id: 2 (int)
+        name: aa (string:2)
+        cat: dd (string:2)
+    2:
+        id: 3 (int)
+        name: bb (string:2)
+        cat: cc (string:2)
+    3:
+        id: 4 (int)
+        name: bb (string:2)
+        cat: dd (string:2)
+arr2:
+    2:
+        id: 3 (int)
+        name: bb (string:2)
+        cat: cc (string:2)
+    3:
+        id: 4 (int)
+        name: bb (string:2)
+        cat: dd (string:2)
+    0:
+        id: 1 (int)
+        name: aA (string:2)
+        cat: cc (string:2)
+    1:
+        id: 2 (int)
+        name: aa (string:2)
+        cat: dd (string:2)
+
+
+```
+

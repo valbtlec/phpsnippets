@@ -4,6 +4,7 @@
 * [arrays](first-question.md)
   * [array flattening function](first-question/array-flattening.md)
   * [multidimentional handling](first-question/two.md)
+  * trier tableau multidimentionels
 * [directories, pages](directories-pages.md)
   * [parse\_url](parseurl.md)
 * [Dates](dates.md)

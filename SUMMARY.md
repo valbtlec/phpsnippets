@@ -10,6 +10,7 @@
 * [Dates](dates.md)
   * [dateTime\(\)](dates/datetime.md)
   * [formater date renvoyé par mysql](dates/formater-date-renvoye-par-mysql.md)
+* [tips](tips.md)
 
 ## SQL
 

@@ -1,6 +1,15 @@
 #les formulaires : la base
 
 
+* recupérer toutes les valeurs $_POST
+
+```php
+extract($_POST);
+
+```
+
+
+
 * conserver les valeur saisies si formulaire soumis mais non complet :
 
 ```php
@@ -10,7 +19,6 @@
 
 
 * éviter le renvoi renvoi du formulaire après traitement
-
 
 
 ```php

@@ -12,7 +12,7 @@ extract($_POST);
 
 * conserver les valeur saisies si formulaire soumis mais non complet :
 
-```php
+```html
 
 <input placeholder="Objet" name="objet" id="objet" type="text" value="<?=isset($objet)? $objet: false?>">
 ```

@@ -1,10 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [directories, pages](directories-pages.md)
-* [Dates](dates.md)
-* [tips](tips.md)
-* [formulaire](formulaire.md)
 
 ## SQL
 

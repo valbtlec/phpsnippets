@@ -8,8 +8,8 @@
 
 ## SQL
 
+* [SQL date](sql-advanced/sql-date.md)
 * [sql advanced](sql-advanced.md)
-  * [SQL date](sql-advanced/sql-date.md)
 
 ## array
 

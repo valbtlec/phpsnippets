@@ -2,10 +2,7 @@
 
 * [Introduction](README.md)
 * [directories, pages](directories-pages.md)
-  * [parse\_url](parseurl.md)
 * [Dates](dates.md)
-  * [dateTime\(\)](dates/datetime.md)
-  * [formater date renvoyé par mysql](dates/formater-date-renvoye-par-mysql.md)
 * [tips](tips.md)
   * [short open tags](tips/short-open-tags.md)
 * [formulaire](formulaire.md)
@@ -24,7 +21,12 @@
 
 ## directories, pages
 
+* [parse\_url](parseurl.md)
+
 ## dates
+
+* [dateTime\(\)](dates/datetime.md)
+* [formater date renvoyé par mysql](dates/formater-date-renvoye-par-mysql.md)
 
 ## tips
 

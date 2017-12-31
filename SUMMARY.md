@@ -4,7 +4,7 @@
 * [arrays](first-question.md)
   * [array flattening function](first-question/array-flattening.md)
   * [multidimentional handling](first-question/two.md)
-  * trier tableau multidimentionels
+  * [trier tableau multidimentionels](first-question/trier-tableau-multidimentionels.md)
 * [directories, pages](directories-pages.md)
   * [parse\_url](parseurl.md)
 * [Dates](dates.md)
@@ -19,4 +19,14 @@
 
 * [sql advanced](sql-advanced.md)
   * [SQL date](sql-advanced/sql-date.md)
+
+## array
+
+## directories, pages
+
+## dates
+
+## tips
+
+## forms
 

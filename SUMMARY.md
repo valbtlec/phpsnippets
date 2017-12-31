@@ -4,9 +4,7 @@
 * [directories, pages](directories-pages.md)
 * [Dates](dates.md)
 * [tips](tips.md)
-  * [short open tags](tips/short-open-tags.md)
 * [formulaire](formulaire.md)
-  * [la base](la-base.md)
 
 ## SQL
 
@@ -30,5 +28,9 @@
 
 ## tips
 
+* [short open tags](tips/short-open-tags.md)
+
 ## forms
+
+* [la base](la-base.md)
 

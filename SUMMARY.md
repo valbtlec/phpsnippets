@@ -1,10 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [arrays](first-question.md)
-  * [array flattening function](first-question/array-flattening.md)
-  * [multidimentional handling](first-question/two.md)
-  * [trier tableau multidimentionels](first-question/trier-tableau-multidimentionels.md)
 * [directories, pages](directories-pages.md)
   * [parse\_url](parseurl.md)
 * [Dates](dates.md)
@@ -21,6 +17,10 @@
   * [SQL date](sql-advanced/sql-date.md)
 
 ## array
+
+* [multidimentional handling](first-question/two.md)
+* [trier tableau multidimentionels](first-question/trier-tableau-multidimentionels.md)
+* [array flattening function](first-question/array-flattening.md)
 
 ## directories, pages
 

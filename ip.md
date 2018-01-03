@@ -2,7 +2,7 @@
 
 
 
-```
+```php
 function getRealIpAddr()
 {
     if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet

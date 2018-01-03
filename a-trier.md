@@ -176,6 +176,21 @@ function getPDOLink($config) {
 
 
 
+```
+$dsn = "mysql:host=localhost;dbname=pagination;port=8889;charset=utf8";
+try 
+{
+    $pdo = new PDO($dsn, 'root', 'root');
+} 
+catch (PDOException $exception) 
+{
+    mail('mon-adresse-mail@mail.fr', 'PDOException', $exception->getMessage());
+    exit('Erreur de connexion BDD');
+}
+```
+
+
+
 
 
 #form

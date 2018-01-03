@@ -21,6 +21,7 @@
 
 ## directories, pages
 
+* [IP](ip.md)
 * [directories](directories.md)
 * [parse\_url](parseurl.md)
 

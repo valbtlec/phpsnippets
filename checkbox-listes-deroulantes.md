@@ -26,15 +26,14 @@ echo '<br />
 
 
 
- * alimenter automatiquement des checkbox et récupérer les valeurs cochées
+ * alimenter automatiquement des listes déroulantes et récupérer les valeurs séléctionnées
 
 <form method="POST" action="checkbox.php">
 
- <?php
- echo "<select name='datePrime'>";
-for($i=0;$i<sizeOf($tabDatePrime); $i++){
-	echo "<OPTION value='".$tabDatePrime[$i]."'><a href='".$tabNomFichier[$i]."'>" .$tabDatePrime[$i]. "</a></OPTION>";
-
+echo "<select name='datePrime'>";
+for($i=0;$i<sizeOf($tabDatePrime); $i++)
+{
+   echo "<OPTION value='".$tabDatePrime[$i]."'><a href='".$tabNomFichier[$i]."'>".$tabDatePrime[$i]. "</a></OPTION>";
 }
 echo "</select>";
  echo"<input type='submit' name='consultationok' value='Indexer'> </form>";

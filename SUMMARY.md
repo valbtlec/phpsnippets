@@ -1,9 +1,12 @@
 # Summary
 
+## gestion d'erreur
+
 * [Introduction](README.md)
 * [a trier](a-trier.md)
 * [jquery](jquery.md)
 * [css](css.md)
+* [methodes de gestion d'erreur ](methodes-de-gestion-derreur.md)
 
 ## SQL
 

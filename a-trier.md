@@ -132,5 +132,14 @@ $pdo = new PDO($dsn, $username, $password, $options);
 ```
 
 
+#form
+
+
+
+```php
+<!-- sécuriser le php self -->
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+```
+
 
 

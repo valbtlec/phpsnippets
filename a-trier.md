@@ -145,6 +145,30 @@ $pdo = new PDO($dsn, $username, $password, $options);
 ```
 
 
+
+```php
+$config = array(
+    'host'      => 'localhost',
+    'port'      => 8889, // 3306
+    'username'  => 'root',
+    'password'  => 'root',
+    'database'  => 'oracom',
+);
+//		/functions/database.fn.php
+function getPDOLink($config) {
+	$dsn = 'mysql:dbname='.$config['database'].';host='.$config['host'].';port='.$config['port'];
+	try {
+		return new PDO($dsn, $config['username'], $config['password']);
+	} catch (PDOException $exception) {
+		exit('BDD Error Connection');
+	}
+}
+```
+
+
+
+
+
 #form
 
 

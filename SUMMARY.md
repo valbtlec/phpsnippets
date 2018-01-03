@@ -21,6 +21,7 @@
 
 ## directories, pages
 
+* [directories](directories.md)
 * [parse\_url](parseurl.md)
 
 ## dates

@@ -10,6 +10,7 @@ PATH_SEPARATOR
 set_include_path()
 get_include_path()
 $_SERVER['PHP_SELF']
+__DIR__
 ```
 
 

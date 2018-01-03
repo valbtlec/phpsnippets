@@ -6,6 +6,7 @@
 * [a trier](a-trier.md)
 * [jquery](jquery.md)
 * [css](css.md)
+* [fn utiles](fn-utiles.md)
 
 ## array
 

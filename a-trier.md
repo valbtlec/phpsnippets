@@ -68,6 +68,23 @@ $status = $pdo->prepare($sql)->execute($row);
 ```
 
 
+
+
+```
+function updateTodo(PDO $pdo, $todo) {
+    $sql = "UPDATE todo SET name = :name, content = :content WHERE id = :id";
+    $prepare = $pdo->prepare($sql);
+    return $prepare->execute(array(
+        'id'        => $todo['id'],
+        'name'      => $todo['name'],
+        'content'   => $todo['content'],
+    ));
+}
+```
+
+
+
+
 ##insert
 ```php
 $row = [

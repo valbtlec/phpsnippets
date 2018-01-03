@@ -35,3 +35,19 @@ input new types
 <input type="color">
 ```
 
+#compatibilité ie
+By placing the following code in between your pages’ tags, we can easily avoid many of the non-compatibility problems between HTML5 and Internet Explorer.
+html5shiv.js 
+remysharp.com/2009/01/07/html5-enabling-script
+
+
+
+```
+<!--[if IE]> 
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]--> 
+```
+
+
+
+

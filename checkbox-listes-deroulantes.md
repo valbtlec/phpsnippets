@@ -32,18 +32,21 @@ echo '<br />
 
 ```html
 <form method="POST" action="checkbox.php">
-<?php
-echo "<select name='datePrime'>";
-for($i=0;$i<sizeOf($tabDatePrime); $i++)
-{
-   echo "<OPTION value='".$tabDatePrime[$i]."'><a href='".$tabNomFichier[$i]."'>".$tabDatePrime[$i]. "</a></OPTION>";
-}
-echo "</select>";
- echo"<input type='submit' name='consultationok' value='Indexer'> </form>";
- if(isset($_POST['consultationok'])){
- $periode=$_POST['datePrime'];
- echo $periode;
- echo 'bouton valide';
+ <select name='datePrime'>
+ <?php
+ for($i=0;$i<sizeOf($tabDatePrime); $i++)
+ {
+    echo "<OPTION value='".$tabDatePrime[$i]."'><a href='".$tabNomFichier[$i]."'>".$tabDatePrime[$i]. "</a></OPTION>";
+ }
+?>
+ </select>
+<input type='submit' name='consultationok' value='Indexer'> 
+</form>
+ <?php
+ if(isset($_POST['consultationok']))
+ {
+  $periode=$_POST['datePrime'];
+  echo $periode;
  }
  else
  {

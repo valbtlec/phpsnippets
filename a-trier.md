@@ -1,4 +1,4 @@
-
+#array
 
 ```php
 
@@ -18,4 +18,55 @@ $sth = $dbh->prepare("SELECT id, name FROM contacts WHERE id IN ($place_holders)
 $sth->execute($params);
 
 ```
+
+#user.ini
+
+
+```php
+
+error_reporting = E_ALL
+log_errors = On
+display_errors = On
+```
+
+
+#requetes
+
+```php
+$pdo->prepare("DELETE FROM users")->execute();
+```
+
+
+```php
+$where = ['id' => 1];
+$pdo->prepare("DELETE FROM users WHERE id=:id")->execute($where);
+```
+
+
+
+```php
+$row = [
+    'updated_at' => '2017-01-01 00:00:00'
+];
+$sql = "UPDATE users SET updated_at=:updated_at";
+$pdo->prepare($sql)->execute($row);
+
+$affected = $pdo->rowCount();
+```
+
+
+
+```
+$row = [
+    'id' => 1,
+    'username' => 'bob',
+    'email' => 'bob2@example.com'
+];
+$sql = "UPDATE users SET username=:username, email=:email WHERE id=:id;";
+$status = $pdo->prepare($sql)->execute($row);
+```
+
+
+
+
 

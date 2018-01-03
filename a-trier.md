@@ -121,6 +121,15 @@ $stmt->execute(['email' => $email, 'status' => $status]);
 $user = $stmt->fetch();
 ```
 
+##close cursor
+
+
+```php
+$reponse->closeCursor();
+```
+
+
+
 
 ##connect
 

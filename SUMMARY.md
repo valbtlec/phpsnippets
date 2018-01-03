@@ -30,6 +30,10 @@
 * [directories](directories.md)
 * [parse\_url](parseurl.md)
 
+## email
+
+* [valider](email/valider.md)
+
 ## erreurs
 
 * [methodes de gestion d'erreur ](methodes-de-gestion-derreur.md)

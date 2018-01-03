@@ -97,6 +97,19 @@ foreach ($stmt as $row) {
 //With fetch for small results.
 
 $news = $pdo->query('SELECT * FROM news')->fetch();
+
+
+function findTodo(PDO $pdo, $id) {
+    $sql = "SELECT * FROM todo WHERE id = {$pdo->quote($id, PDO::PARAM_INT)}"; //Représente le type de données INTEGER SQL
+    $query = $pdo->query($sql);
+    if ($query) {
+        return $query->fetch(PDO::FETCH_ASSOC);
+    } else {
+        return false;
+    }
+}
+
+
 ```
 
 

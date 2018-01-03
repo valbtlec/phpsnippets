@@ -56,7 +56,7 @@ $affected = $pdo->rowCount();
 
 
 
-```
+```php
 $row = [
     'id' => 1,
     'username' => 'bob',
@@ -66,6 +66,69 @@ $sql = "UPDATE users SET username=:username, email=:email WHERE id=:id;";
 $status = $pdo->prepare($sql)->execute($row);
 ```
 
+
+
+```php
+$row = [
+    'username' => 'bob',
+    'email' => 'bob@example.com'
+];
+$sql = "INSERT INTO users SET username=:username, email=:email;";
+$status = $pdo->prepare($sql)->execute($row);
+
+if ($status) {
+    $lastId = $pdo->lastInsertId();
+    echo $lastId;
+}
+```
+
+
+
+```php
+//With fetch for large results.
+$stmt = $pdo->prepare("SELECT * FROM employees WHERE name = :name");
+$stmt->execute(['name' => $name]);
+
+foreach ($stmt as $row) {
+    // do something with $row
+}
+
+//With fetchAll for small results.
+
+$news = $pdo->query('SELECT * FROM news')->fetchAll();
+```
+
+
+
+
+```php
+$stmt = $pdo->prepare("SELECT * FROM users WHERE email = :email AND status=:status LIMIT 1");
+$stmt->execute(['email' => $email, 'status' => $status]);
+$user = $stmt->fetch();
+```
+
+
+
+
+
+```php
+$host = '127.0.0.1';
+$dbname = 'test';
+$username = 'root';
+$password = '';
+$charset = 'utf8';
+$collate = 'utf8_unicode_ci';
+$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_PERSISTENT => false,
+    PDO::ATTR_EMULATE_PREPARES => false,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES $charset COLLATE $collate"
+];
+
+$pdo = new PDO($dsn, $username, $password, $options);
+```
 
 
 

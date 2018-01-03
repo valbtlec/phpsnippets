@@ -1,12 +1,14 @@
- * page a l'origine de la demande
-
+ * page a l'origine de la demande - exemple page avec un formulaire :
+ 
+   * form.php :
 
 ```php
-//exemple page avec un formulaire :
-//form.php :
-<form action="traitement.php">
 
-//traitement.php
+<form action="traitement.php">
+```
+traitement.php
+
+```php
 $_SERVER['HTTP_REFERER'];       => renvoi l'adresse de form.php
 	    
 ```

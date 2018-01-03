@@ -45,6 +45,7 @@
 
 * [la base](la-base.md)
 * [nettoyer les saisies formulaires](nettoyer-les-saisies-formulaires.md)
+* [checkbox - listes déroulantes](checkbox-listes-deroulantes.md)
 
 ## misc
 

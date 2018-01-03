@@ -28,8 +28,13 @@ echo '<br />
 
  * alimenter automatiquement des listes déroulantes et récupérer les valeurs séléctionnées
 
-<form method="POST" action="checkbox.php">
 
+
+```html
+<form method="POST" action="checkbox.php">
+```
+
+```php
 echo "<select name='datePrime'>";
 for($i=0;$i<sizeOf($tabDatePrime); $i++)
 {
@@ -46,4 +51,7 @@ echo "</select>";
  {
  echo 'bouton non valide';
  }
+```
+
+
  ?>

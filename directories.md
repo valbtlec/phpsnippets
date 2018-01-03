@@ -1,3 +1,8 @@
+## fonction, var utilisées
+
+
+```php
+
 $_SERVER["DOCUMENT_ROOT"]
 dirname(__FILE__)
 DIRECTORY_SEPARATOR 
@@ -5,6 +10,9 @@ PATH_SEPARATOR
 set_include_path()
 get_include_path()
 $_SERVER['PHP_SELF']
+```
+
+
 
 
 #chemins absolus

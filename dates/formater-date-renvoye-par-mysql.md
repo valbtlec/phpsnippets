@@ -16,3 +16,4 @@ $date=$date->format('d-m-Y');
  ```sql
 SELECT DATE_FORMAT(date, '%d/%m/%Y %Hh%imin%ss') AS date FROM table //renvoie DD/MM/YYYY HHhMMSS49s ( 11/03/2010 15h47min49)
 ```
+

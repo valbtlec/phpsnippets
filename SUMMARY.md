@@ -17,6 +17,7 @@
 
 * [dateTime\(\)](dates/datetime.md)
 * [formater date renvoyé par mysql](dates/formater-date-renvoye-par-mysql.md)
+* [valider saisie d'une date](dates/valider-saisie-dune-date.md)
 
 ## db
 

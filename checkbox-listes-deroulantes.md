@@ -4,14 +4,16 @@
 
 recup valeur checkbox => array en name
 
-```php
+```html
 <form method="POST" action="checkbox.php">
     <input type="checkbox" name="choix[]" value="1"> nom 1<br>
     <input type="checkbox" name="choix[]" value="2"> nom 2<br>
     <input type="checkbox" name="choix[]" value="3"> nom 3<br>
      <input type="submit" value="test">
-    </form>';
-//TRAITEMENT DES CASES A COCHER
+</form>
+```
+
+```php
 if(!empty($_POST['choix']))
 {
 echo 'Les valeurs des cases cochées sont :<br />';
@@ -22,13 +24,12 @@ echo $val,'<br />';
 echo '<br />
 ```
 
+
+
  * alimenter automatiquement des checkbox et récupérer les valeurs cochées
 
+<form method="POST" action="checkbox.php">
 
-
-//alimentation auto et récup
-
-<FORM method="post" action=<?php echo $_SERVER['PHP_SELF'];?> name="consultation">
  <?php
  echo "<select name='datePrime'>";
 for($i=0;$i<sizeOf($tabDatePrime); $i++){

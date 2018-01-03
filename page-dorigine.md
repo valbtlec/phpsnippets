@@ -15,6 +15,12 @@ $_SERVER['HTTP_REFERER'];       => renvoi l'adresse de form.php
 
 * page à l'orgine de la demande sans query string
 
+
+
+```php
 $referer=$_SERVER['HTTP_REFERER'];
 // retirer la query string
 $referer = reset((explode('?', $referer)));
+
+```
+

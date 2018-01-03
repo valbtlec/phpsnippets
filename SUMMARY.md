@@ -43,6 +43,7 @@
 ## forms
 
 * [la base](la-base.md)
+* [nettoyer les saisies formulaires](nettoyer-les-saisies-formulaires.md)
 
 ## misc
 
@@ -52,4 +53,8 @@
 
 * [SQL date](sql-advanced/sql-date.md)
 * [sql advanced](sql-advanced.md)
+
+## strings
+
+* rien
 

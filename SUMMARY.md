@@ -23,6 +23,7 @@
 
 * [requetes](db/requetes.md)
 * [connect](db/connect.md)
+* [requetes advanced](db/requetes-advanced.md)
 
 ## directories, pages
 

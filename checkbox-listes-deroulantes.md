@@ -32,9 +32,7 @@ echo '<br />
 
 ```html
 <form method="POST" action="checkbox.php">
-```
-
-```php
+<?php
 echo "<select name='datePrime'>";
 for($i=0;$i<sizeOf($tabDatePrime); $i++)
 {

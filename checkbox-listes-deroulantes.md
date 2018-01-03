@@ -22,7 +22,7 @@ echo $val,'<br />';
 echo '<br />
 ```
 
-
+ * alimenter automatiquement des checkbox et récupérer les valeurs cochées
 
 
 

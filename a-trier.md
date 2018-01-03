@@ -1,7 +1,6 @@
-#array
+# array
 
 ```php
-
 /* Exécute une commande préparée en utilisant un tableau de valeurs pour les clauses IN */
 $params = array(1, 21, 63, 171);
 /* Crée une chaîne pour les marqueurs */
@@ -16,35 +15,31 @@ $place_holders = implode(',', array_fill(0, count($params), '?'));
 */
 $sth = $dbh->prepare("SELECT id, name FROM contacts WHERE id IN ($place_holders)");
 $sth->execute($params);
-
 ```
 
-#user.ini
-
+# user.ini
 
 ```php
-
 error_reporting = E_ALL
 log_errors = On
 display_errors = On
 ```
 
+# requetes
 
-#requetes
+## delete
 
-##delete
 ```php
 $pdo->prepare("DELETE FROM users")->execute();
 ```
-
 
 ```php
 $where = ['id' => 1];
 $pdo->prepare("DELETE FROM users WHERE id=:id")->execute($where);
 ```
 
+## update
 
-##update
 ```php
 $row = [
     'updated_at' => '2017-01-01 00:00:00'
@@ -55,8 +50,6 @@ $pdo->prepare($sql)->execute($row);
 $affected = $pdo->rowCount();
 ```
 
-
-
 ```php
 $row = [
     'id' => 1,
@@ -66,9 +59,6 @@ $row = [
 $sql = "UPDATE users SET username=:username, email=:email WHERE id=:id;";
 $status = $pdo->prepare($sql)->execute($row);
 ```
-
-
-
 
 ```
 function updateTodo(PDO $pdo, $todo) {
@@ -82,10 +72,8 @@ function updateTodo(PDO $pdo, $todo) {
 }
 ```
 
+## insert
 
-
-
-##insert
 ```php
 $row = [
     'username' => 'bob',
@@ -100,8 +88,8 @@ if ($status) {
 }
 ```
 
+## select
 
-##select
 ```php
 //With fetchALL for large results.
 $stmt = $pdo->prepare("SELECT * FROM employees WHERE name = :name");
@@ -125,12 +113,7 @@ function findTodo(PDO $pdo, $id) {
         return false;
     }
 }
-
-
 ```
-
-
-
 
 ```php
 $stmt = $pdo->prepare("SELECT * FROM users WHERE email = :email AND status=:status LIMIT 1");
@@ -138,18 +121,13 @@ $stmt->execute(['email' => $email, 'status' => $status]);
 $user = $stmt->fetch();
 ```
 
-##close cursor
-
+## close cursor
 
 ```php
 $reponse->closeCursor();
 ```
 
-
-
-
-##connect
-
+## connect
 
 ```php
 $host = '127.0.0.1';
@@ -170,8 +148,6 @@ $options = [
 $pdo = new PDO($dsn, $username, $password, $options);
 ```
 
-
-
 ```php
 $config = array(
     'host'      => 'localhost',
@@ -180,18 +156,16 @@ $config = array(
     'password'  => 'root',
     'database'  => 'oracom',
 );
-//		/functions/database.fn.php
+//        /functions/database.fn.php
 function getPDOLink($config) {
-	$dsn = 'mysql:dbname='.$config['database'].';host='.$config['host'].';port='.$config['port'];
-	try {
-		return new PDO($dsn, $config['username'], $config['password']);
-	} catch (PDOException $exception) {
-		exit('BDD Error Connection');
-	}
+    $dsn = 'mysql:dbname='.$config['database'].';host='.$config['host'].';port='.$config['port'];
+    try {
+        return new PDO($dsn, $config['username'], $config['password']);
+    } catch (PDOException $exception) {
+        exit('BDD Error Connection');
+    }
 }
 ```
-
-
 
 ```php
 $dsn = "mysql:host=localhost;dbname=pagination;port=8889;charset=utf8";
@@ -206,35 +180,26 @@ catch (PDOException $exception)
 }
 ```
 
-
-
-
-
-#form
-
-
+# form
 
 ```php
 <!-- sécuriser le php self -->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 ```
 
-
-
-#email validation
-
-
-
+# email validation
 
 ```php
 if(!filter_var($_POST["email"],FILTER_VALIDATE_EMAIL))
 {
-	$error_mail="email erroné";
-	$error=true;
+    $error_mail="email erroné";
+    $error=true;
 }
 else
 {
-	$email=$_POST["email"];
+    $email=$_POST["email"];
 }
 ```
+
+
 

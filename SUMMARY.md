@@ -1,12 +1,11 @@
 # Summary
 
-## gestion d'erreur
+## A traiter
 
 * [Introduction](README.md)
 * [a trier](a-trier.md)
 * [jquery](jquery.md)
 * [css](css.md)
-* [methodes de gestion d'erreur ](methodes-de-gestion-derreur.md)
 
 ## SQL
 
@@ -46,5 +45,6 @@
 
 ## erreurs
 
+* [methodes de gestion d'erreur ](methodes-de-gestion-derreur.md)
 * [user.ini](erreurs/userini.md)
 

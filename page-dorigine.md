@@ -6,7 +6,7 @@
 
 <form action="traitement.php">
 ```
-traitement.php
+   * traitement.php
 
 ```php
 $_SERVER['HTTP_REFERER'];       => renvoi l'adresse de form.php

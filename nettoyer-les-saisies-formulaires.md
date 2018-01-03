@@ -7,6 +7,8 @@ function cleanData($data)
 	//supprime les antislashes
 	$data=stripslashes($data);
 	
+	//converti les saut de ligne en saut de ligne
+	$data=nl2br($data);
 	//converti les caractères spéciaux en entités html
 	$data=htmlspecialchars($data);
 

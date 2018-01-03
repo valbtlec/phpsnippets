@@ -6,10 +6,7 @@
 
 # form
 
-```php
-<!-- sécuriser le php self -->
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-```
+
 
 # email validation
 

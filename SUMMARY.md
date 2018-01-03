@@ -7,16 +7,16 @@
 * [jquery](jquery.md)
 * [css](css.md)
 
-## SQL
-
-* [SQL date](sql-advanced/sql-date.md)
-* [sql advanced](sql-advanced.md)
-
 ## array
 
 * [multidimentional handling](first-question/two.md)
 * [trier tableau multidimentionels](first-question/trier-tableau-multidimentionels.md)
 * [array flattening function](first-question/array-flattening.md)
+
+## dates
+
+* [dateTime\(\)](dates/datetime.md)
+* [formater date renvoyé par mysql](dates/formater-date-renvoye-par-mysql.md)
 
 ## db
 
@@ -30,21 +30,21 @@
 * [directories](directories.md)
 * [parse\_url](parseurl.md)
 
-## dates
+## erreurs
 
-* [dateTime\(\)](dates/datetime.md)
-* [formater date renvoyé par mysql](dates/formater-date-renvoye-par-mysql.md)
-
-## tips
-
-* [short open tags](tips/short-open-tags.md)
+* [methodes de gestion d'erreur ](methodes-de-gestion-derreur.md)
+* [user.ini](erreurs/userini.md)
 
 ## forms
 
 * [la base](la-base.md)
 
-## erreurs
+## misc
 
-* [methodes de gestion d'erreur ](methodes-de-gestion-derreur.md)
-* [user.ini](erreurs/userini.md)
+* [short open tags](tips/short-open-tags.md)
+
+## SQL
+
+* [SQL date](sql-advanced/sql-date.md)
+* [sql advanced](sql-advanced.md)
 

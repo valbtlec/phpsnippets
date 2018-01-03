@@ -6,7 +6,6 @@
 * [a trier](a-trier.md)
 * [jquery](jquery.md)
 * [css](css.md)
-* [fn utiles](fn-utiles.md)
 
 ## array
 
@@ -57,5 +56,6 @@
 
 ## strings
 
-* rien
+* [fn utiles](fn-utiles.md)
+* [rien](rien.md)
 

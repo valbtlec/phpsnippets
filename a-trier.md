@@ -32,6 +32,7 @@ display_errors = On
 
 #requetes
 
+##delete
 ```php
 $pdo->prepare("DELETE FROM users")->execute();
 ```
@@ -43,7 +44,7 @@ $pdo->prepare("DELETE FROM users WHERE id=:id")->execute($where);
 ```
 
 
-
+##update
 ```php
 $row = [
     'updated_at' => '2017-01-01 00:00:00'
@@ -67,7 +68,7 @@ $status = $pdo->prepare($sql)->execute($row);
 ```
 
 
-
+##insert
 ```php
 $row = [
     'username' => 'bob',
@@ -83,9 +84,9 @@ if ($status) {
 ```
 
 
-
+##select
 ```php
-//With fetch for large results.
+//With fetchALL for large results.
 $stmt = $pdo->prepare("SELECT * FROM employees WHERE name = :name");
 $stmt->execute(['name' => $name]);
 
@@ -93,9 +94,9 @@ foreach ($stmt as $row) {
     // do something with $row
 }
 
-//With fetchAll for small results.
+//With fetch for small results.
 
-$news = $pdo->query('SELECT * FROM news')->fetchAll();
+$news = $pdo->query('SELECT * FROM news')->fetch();
 ```
 
 
@@ -108,7 +109,7 @@ $user = $stmt->fetch();
 ```
 
 
-
+##connect
 
 
 ```php

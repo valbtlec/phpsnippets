@@ -23,8 +23,24 @@ echo $val,'<br />';
 }
 echo '<br />
 ```
+ * récupérer valeur liste déroulante
+ 
 
 
+```html
+<form action ="indexplanification.php" method="post">
+<select name="page">
+<option value='valeur1'>un</option>
+<option value='valeur2'>deux</option>
+<input type="submit" name ="choixafficheur" value="Selectionner">
+<?php
+if(isset($_POST['choixafficheur'])){
+ $afficheur=$_POST['page'];
+}
+
+
+
+```
 
  * alimenter automatiquement des listes déroulantes et récupérer les valeurs séléctionnées
 

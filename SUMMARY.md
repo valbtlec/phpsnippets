@@ -22,6 +22,7 @@
 ## db
 
 * [requetes](db/requetes.md)
+* [connect](db/connect.md)
 
 ## directories, pages
 

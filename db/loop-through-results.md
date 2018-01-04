@@ -1,4 +1,4 @@
-
+ * construction d'un array 
 
 ```php
 $dsn = "mysql:host=localhost;dbname=btlec";

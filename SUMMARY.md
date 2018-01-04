@@ -24,6 +24,7 @@
 * [requetes](db/requetes.md)
 * [connect](db/connect.md)
 * [requetes advanced](db/requetes-advanced.md)
+* [loop through results](db/loop-through-results.md)
 
 ## directories, pages
 

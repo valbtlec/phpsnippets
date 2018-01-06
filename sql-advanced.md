@@ -164,6 +164,12 @@ order by ordernumber;
 https://youtu.be/FKSSOpQe5Jc
 
 
+si fonction d'agrégation sur une colonne et affichage d'une autre, il faut faire un group by. Exemple :
+
+SELECT msg, sum(rep) FROM msg => erreur
+SELECT msg, sum(rep) FROM msg GROUP BY msg => ok
+
+
 
 
 

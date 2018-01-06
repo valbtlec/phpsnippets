@@ -159,7 +159,7 @@ order by ordernumber;
 
 ```
 
-Avec in (sous requete renvoi plusieurs résultats
+Avec in (sous requete renvoi plusieurs résultats)
 
 ```sql
 SELECT *  

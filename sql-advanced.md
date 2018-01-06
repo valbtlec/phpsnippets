@@ -159,18 +159,37 @@ order by ordernumber;
 
 ```
 
+
+
+```sql
+SELECT *  
+FROM 
+msg table_msg 
+LEFT JOIN 
+replies table_replies 
+ON table_msg.id = table_replies.id_msg 
+WHERE table_replies.id_msg= :idMsg 
+AND 
+date_reply 
+IN (SELECT max(date_reply) FROM replies GROUP BY id_msg
+```
+
+
+
+
+
 #more
 
 https://youtu.be/FKSSOpQe5Jc
 
 
-si fonction d'agrégation sur une colonne et affichage d'une autre, il faut faire un group by. Exemple :
+Fonction d'agrégation :
 
 SELECT msg, sum(rep) FROM msg => erreur
 SELECT msg, sum(rep) FROM msg GROUP BY msg => ok
 
-
-
-
-
-
+Filtrer : where ou having
+filtre avant agrégation
+SELECT msg, sum(rep) FROM msg WHERE msg='blue' GROUP BY msg 
+filtre après
+SELECT msg, sum(rep) FROM msg  GROUP BY msg HAVING msg='blue'

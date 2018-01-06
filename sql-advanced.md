@@ -1,5 +1,7 @@
 #SQL ADVANCED
 
+https://youtu.be/es_t9QXpXY4
+
 ## jointure simple
 
 jointure simple

@@ -181,7 +181,7 @@ IN (SELECT max(date_reply) FROM replies GROUP BY id_msg
 #more
 
 https://youtu.be/FKSSOpQe5Jc
-
+http://csharp-video-tutorials.blogspot.fr/p/free-sql-server-video-tutorials-for.html
 
 Fonction d'agrégation :
 

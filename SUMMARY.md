@@ -51,6 +51,7 @@
 ## misc
 
 * [short open tags](tips/short-open-tags.md)
+* [collection of bugs](tips/collection-of-bugs.md)
 
 ## SQL
 

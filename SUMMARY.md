@@ -51,6 +51,7 @@
 ## misc
 
 * [short open tags](tips/short-open-tags.md)
+* [Upload](tips/upload.md)
 * [collection of bugs](tips/collection-of-bugs.md)
 * [tips](tips/tips.md)
 

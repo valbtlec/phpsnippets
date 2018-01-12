@@ -26,3 +26,11 @@ $referer = reset((explode('?', $referer)));
 
 ```
 
+
+ * redirection sur la même page quand query string
+
+echo $_SERVER['PHP_SELF'] . '?' . $_SERVER['QUERY_STRING'];
+
+mieux (xss)
+$url = $_SERVER['PHP_SELF'] . '?' . $_SERVER['QUERY_STRING'];
+echo htmlspecialchars($url, ENT_QUOTES, 'utf-8');

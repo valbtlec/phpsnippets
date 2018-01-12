@@ -31,7 +31,7 @@
 * [IP](ip.md)
 * [directories](directories.md)
 * [parse\_url](parseurl.md)
-* [page d'origine](page-dorigine.md)
+* [page d'origine, redirection](page-dorigine.md)
 
 ## email
 

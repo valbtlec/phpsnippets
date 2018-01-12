@@ -22,6 +22,9 @@ $referer = reset((explode('?', $referer)));
 
 ```php
 echo $_SERVER['PHP_SELF'] . '?' . $_SERVER['QUERY_STRING'];
+header('Location:'. $_SERVER['PHP_SELF'] . '?' . $_SERVER['QUERY_STRING']);
+
+
 ```
 
 mieux (xss)

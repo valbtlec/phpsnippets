@@ -13,6 +13,21 @@ recup valeur checkbox => array en name
 </form>
 ```
 
+ * alimentation case à cocher avec db :
+
+
+```php
+ echo "<input type='checkbox' class='filled-in' id='".$service['id']."' name='service[]' value= '".$service['id']."' />";
+ echo "<label for='".$service['id']."'>".$service['full_name']."</label>";
+ 
+ //renvoi la valeur de value de la case cochée
+$newService=$_POST['service'][0];
+
+ 
+```
+
+
+
 ```php
 if(!empty($_POST['choix']))
 {

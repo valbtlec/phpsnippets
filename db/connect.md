@@ -1,5 +1,28 @@
 ## connect
 
+ * avec des constantes 
+ 
+
+```php
+
+try{
+     $pdo=new PDO("mysql:host=localhost;dnbame=mabase", "root", "");
+ }
+ catch(PDOException $e){
+     die('Erreur: ' .$e->getMessage());
+ }
+
+//devient :
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'btlec');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');    
+    
+```
+
+
+
+
 ```php
 $host = '127.0.0.1';
 $dbname = 'test';

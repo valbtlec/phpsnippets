@@ -11,3 +11,18 @@ mb_internal_encoding('UTF-8');
 $objMag = mb_encode_mimeheader($objMag);
 ```
 
+
+
+ * personnaliser le title quand on utilise des partials pour le header
+ 
+ dans le fichier _header :
+ 
+
+```html
+<title>
+ <?php
+ isset($title) ? $title : 'titre par défaut';
+?>
+ </title>
+```
+

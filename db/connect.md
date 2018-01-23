@@ -17,7 +17,17 @@ define('DB_HOST', 'localhost');
 define('DB_NAME', 'btlec');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');    
+try{
+     $pdo=new PDO("mysql:host=".DB_HOST.";dnbame=".DB_NAME, DB_USER, DB_PASSWORD);
+ }
+ catch(PDOException $e){
+     die('Erreur: ' .$e->getMessage());
+ }
+
+
     
+        
+                
 ```
 
 

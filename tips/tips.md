@@ -21,7 +21,7 @@ $objMag = mb_encode_mimeheader($objMag);
 ```html
 <title>
  <?php
- isset($title) ? $title : 'titre par défaut';
+ echo isset($title) ? $title : 'titre par défaut';
 ?>
  </title>
 ```

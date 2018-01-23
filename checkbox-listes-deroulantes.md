@@ -84,8 +84,11 @@ if(isset($_POST['choixafficheur'])){
  echo 'bouton non valide';
  }
 ```
-*alimenter une liste déroulante 
-unction fill_unit_select_box($connect)
+* fonction d'alimentation une liste déroulante via requete sql
+
+
+```php
+function fill_unit_select_box($connect)
 { 
  $output = '';
  $query = "SELECT * FROM tbl_unit ORDER BY unit_name ASC";
@@ -98,5 +101,13 @@ unction fill_unit_select_box($connect)
  }
  return $output;
 }
+ 
+// dans le form :
+
+ echo fill_unit_select_box($connect) 
+ 
+```
+
+
 
  ?>

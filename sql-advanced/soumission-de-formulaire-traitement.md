@@ -1,4 +1,15 @@
-
+ * méthode : 
+1- vérif si formulaire soumis
+2-initialise le tableau d'erreur
+3- vérifie si toutes les données sont remplies (création d'un fn générique qui prend en parametre la clé POST, la valeur de ce post, la table )
+4 extrait les valeurs de post
+5- réalise les différents tests et alimente le tableau d'erreur si des données sont mal remplies
+	5.1 test longueur pseudo
+	5.2 test mail valide 
+	5.3 test si pseudo existe déja -> renvoi 0  ou 1 c'est à dire false ou true si true -> existe déja
+	5.4 test pwd correspondent
+	...
+6- si aucune erreur (tableau d'erreur count =0), on traite
 
 ```php
 <?php 

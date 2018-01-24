@@ -65,3 +65,9 @@
 * [fn utiles](fn-utiles.md)
 * [crypter un nom de fichier](rien.md)
 
+## Bonnes pratiques
+
+* Soumission de formulaire - traitement
+
+## rien
+

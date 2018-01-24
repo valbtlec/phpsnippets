@@ -67,7 +67,7 @@
 
 ## Bonnes pratiques
 
-* Soumission de formulaire - traitement
+* [Soumission de formulaire - traitement](sql-advanced/soumission-de-formulaire-traitement.md)
 
 ## rien
 

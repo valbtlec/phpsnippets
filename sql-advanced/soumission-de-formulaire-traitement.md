@@ -1,3 +1,6 @@
+
+
+```php
 <?php 
 
 // 1- vérif si formulaire soumis
@@ -50,3 +53,5 @@ if(isset($_POST['register']))
 
 
  ?>
+```
+

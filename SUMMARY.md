@@ -68,7 +68,8 @@
 ## Bonnes pratiques
 
 * [Soumission de formulaire 1-vérifs](sql-advanced/soumission-de-formulaire-traitement.md)
-* [Soumission de formulaire 2-traitement](sql-advanced/soumission-de-formulaire-2-traitement.md)
+* [Soumission de formulaire 2-envoi mail](sql-advanced/soumission-de-formulaire-2-traitement.md)
+* [Soumission de formulaire 3-afficher les erreurs](sql-advanced/soumission-de-formulaire-3-afficher-les-erreurs.md)
 
 ## rien
 

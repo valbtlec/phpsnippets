@@ -66,3 +66,54 @@ if(isset($_POST['register']))
  ?>
 ```
 
+les 2 fonctions :
+
+
+```php
+// vérif champs non vides=> param =tableau
+if(!function_exists('not_empty'))
+{
+	function not_empty($fields=[])
+	{
+		if(count($fields !=0))
+		{
+			foreach ($fields as $field) 
+			{
+				if(empty($_POST[$field]) || trim($_POST[$field])=="")
+				{
+						return false;
+				}	
+			}
+			return true;
+		}
+	}
+
+}
+
+
+
+
+//verification de l'unicité d'une valeur
+
+if(!function_exists('is_already_in_use'))
+{
+	function is_already_in_use($field,$value,$table)
+	{
+		// on utilise la connection qui est crée dans le fichier database qui lui est inclue dans register.php
+		global $db;
+
+		$req=$db->prepare("SELECT id FROM $table WHERE $field = ?");
+		$req->execute([$value]);
+
+		$count=$req->rowCount();
+
+		$req->closeCursor();
+
+		//0 si n'exite pas 1 si exsite
+		return $count;
+
+	}	
+}
+```
+
+

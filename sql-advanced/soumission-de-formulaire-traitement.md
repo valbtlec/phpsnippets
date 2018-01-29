@@ -49,7 +49,7 @@ if(isset($_POST['register']))
 			//5.4 test pwd correspodent
 			
 			//6 si aucune erreur, on traite
-			if(count($errors==00))
+			if(count($errors==0))
 			{
 
 			}

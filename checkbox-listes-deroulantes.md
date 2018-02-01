@@ -109,5 +109,17 @@ function fill_unit_select_box($connect)
 ```
 
 
+* liste déroulante : sélectionner par défaut la valeur du champ récupéré de la db
 
- ?>
+
+
+```php
+<select class="form-control" id="gt" name="gt">
+<option value="brun" <?=$odr['gt']=='brun' ? ' selected="selected"' : '' ?>>BRUN</option>
+<option value="gem" <?=$odr['gt']=='gem' ? ' selected="selected"' : '' ?> >GEM</option>
+<option value="gris" <?=$odr['gt']=='gris' ? ' selected="selected"' : '' ?> >GRIS</option>
+<option value="pem" <?=$odr['gt']=='pem' ? ' selected="selected"' : '' ?> >PEM</option>
+</select>
+```
+
+

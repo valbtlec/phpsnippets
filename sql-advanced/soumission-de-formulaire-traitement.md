@@ -1,4 +1,7 @@
- * méthode : 
+* etat : video 12
+ 
+   * méthode : 
+   
 1- vérif si formulaire soumis
 2-initialise le tableau d'erreur
 3- vérifie si toutes les données sont remplies (création d'un fn générique qui prend en parametre la clé POST, la valeur de ce post, la table )
@@ -47,6 +50,13 @@ if(isset($_POST['register']))
 			}
 
 			//5.4 test pwd correspodent
+			if (mb_strlen($password) < 6) {
+            		$errors[] = "Mot de passe trop court, il faut 6 caractères minimum";
+       			 } else {
+		            if ($password_confirm != $password) {
+               	 $errors[] = "Les mots de passes ne sont pas identiques...";
+            		}
+		        }
 			
 			//6 si aucune erreur, on traite
 			if(count($errors==0))

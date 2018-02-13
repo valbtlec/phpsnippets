@@ -77,6 +77,16 @@ foreach ($stmt as $row) {
 $news = $pdo->query('SELECT * FROM news')->fetch();
 
 
+
+```php
+// compter le nombre de résultats :
+
+$stmt->rowCount()
+```
+
+
+
+
 function findTodo(PDO $pdo, $id) {
 $sql = "SELECT * FROM todo WHERE id = {$pdo->quote($id, PDO::PARAM_INT)}"; //Représente le type de données INTEGER SQL
 $query = $pdo->query($sql);

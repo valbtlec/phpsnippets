@@ -1,6 +1,59 @@
-# requetes
+# REQUETES
 
-## delete
+## SELECT - BASIC
+
+```php
+function infoService($db){
+	$req=$pdo->prepare('SELECT * FROM services WHERE slug = :gt');
+	$req->execute(array(
+	':gt' =>$_GET['gt']
+	));
+	return $row=$req->fetchAll(PDO::FETCH_ASSOC);
+}
+```
+
+## INSERT - BASIC
+
+```php
+function recordReply($pdoBt,$idMsg,$file)
+{
+	$date=new DateTime();
+	$date=$date->format('Y-m-d H:i:s');
+	$reply=strip_tags($_POST['reply']);
+	$reply=nl2br($reply);
+	$insert=$pdoBt->prepare('INSERT INTO replies (id_msg, reply, replied_by, date_reply,inc_file) VALUE (:id_msg, :reply, :replied_by, :date_reply, :inc_file)');
+	$result=$insert->execute(array(
+		':reply'		=> $reply,
+		':date_reply'		=> $date,
+		':id_msg'		=> $idMsg,
+		':replied_by'		=>$_SESSION['id'],
+		':inc_file'		=> $file
+	));
+	return $result;
+}
+```
+
+
+## UPDATE - BASIC
+
+
+```php
+function affectation($pdoBt,$idMsg,$service)
+{
+	$update=$pdoBt->prepare('UPDATE msg SET id_service= :service  WHERE id= :id');
+	$result=$update->execute(array(
+		':service'		=> $service,
+		':id'		=>$idMsg
+	));
+	return $result;
+}
+```
+
+
+
+
+
+## delete -2
 
 ```php
 $pdo->prepare("DELETE FROM users")->execute();
@@ -11,7 +64,7 @@ $where = ['id' => 1];
 $pdo->prepare("DELETE FROM users WHERE id=:id")->execute($where);
 ```
 
-## update
+## update -2
 
 ```php
 $row = [
@@ -45,7 +98,7 @@ return $prepare->execute(array(
 }
 ```
 
-## insert
+## insert -2
 
 ```php
 $row = [
@@ -61,7 +114,7 @@ echo $lastId;
 }
 ```
 
-## select
+## select -2
 
 ```php
 //With fetchALL for large results.

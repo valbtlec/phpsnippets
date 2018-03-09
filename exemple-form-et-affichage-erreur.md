@@ -17,6 +17,14 @@ on fait directement :
 value="<?php echo $champ;?>"
 ```
 
+pour les boutons radio, on test pour chacun si il existe et on vérifie la valeur du value. Suivant la valeur on checked ou pas 
+
+
+```html
+ <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+```
+
 
 
 

@@ -13,7 +13,7 @@ if(isset($_POST['champ'])),
 on fait directement : 
 
 
-```html
+```php
 value="<?php echo $champ;?>"
 ```
 

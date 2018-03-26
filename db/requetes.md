@@ -173,3 +173,11 @@ $pdo->prepare("DELETE FROM users")->execute();
 $where = ['id' => 1];
 $pdo->prepare("DELETE FROM users WHERE id=:id")->execute($where);
 ```
+
+##rowcount
+
+
+```php
+	$rowCount=$req->rowCount();
+```
+

@@ -174,6 +174,14 @@ date_reply
 IN (SELECT max(date_reply) FROM replies GROUP BY id_msg
 ```
 
+## update MULTITABLE
+
+
+```sql
+UPDATE tbl AS a INNER JOIN tbl AS b ON .... SET a.col = b.col
+
+```
+
 
 
 

@@ -1,5 +1,4 @@
-##passer plusieurs valeurs en paramètre d'une requete préparée
-
+## passer plusieurs valeurs en paramètre d'une requete préparée
 
 ```php
 /* Exécute une commande préparée en utilisant un tableau de valeurs pour les clauses IN */

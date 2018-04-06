@@ -64,7 +64,15 @@ $where = ['id' => 1];
 $pdo->prepare("DELETE FROM users WHERE id=:id")->execute($where);
 ```
 
-## update -2
+## update MULTITABLE
+
+
+```sql
+UPDATE tbl AS a INNER JOIN tbl AS b ON .... SET a.col = b.col
+
+```
+
+## update 2
 
 ```php
 $row = [

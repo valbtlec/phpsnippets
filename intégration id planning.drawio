@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.11">
+  <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-1" value="dans calcul" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-2" value="ajout de l&#39;id_planning dans la table calcul" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-3" value="dans calcul_ajout" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-5" value="création d&#39;un planning pour les mags non déja présents dans calcul ?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-6" value="nouvelle table ?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-7" value="table planning_date ?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-11" value="peu importe la provenance des raqs, on les retrouve dans la table calcul_ajouts" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-12" value="les qte poles =&amp;gt; ils sont dans la table calcul ajout mais n&#39;ont pas de planning, il ne faut pas les prendre en compte" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="350" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="iVGjpOJZx_VSVVC-YaV6-13" value="ajouter un champ exception ou provenance qui permettrait de ne pas prendre en compte comme un planning courant ?&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="140" width="120" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
